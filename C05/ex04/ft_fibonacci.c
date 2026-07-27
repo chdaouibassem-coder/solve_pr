@@ -1,0 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/26 01:26:14 by marvin            #+#    #+#             */
+/*   Updated: 2026/07/26 01:26:14 by marvin           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
+int      ft_fibonacci(int index)
+{
+    if (index < 0)
+    return(-1);
+    if (index == 0)
+    return 0;
+    if (index < 0)
+    return 0;
+    return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+
+}
