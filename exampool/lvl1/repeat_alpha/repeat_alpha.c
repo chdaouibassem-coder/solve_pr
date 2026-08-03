@@ -17,25 +17,34 @@ void    ft_putchar(char c)
     write(1, &c, 1);
 }
 
+   
 
-void    ft_repeat(char c ,int n)
+void    ft_repeat(char c)
 {
-    if (c >= 'a' && c <= 'z')
+    int n;
+
+    n = 0;
+   if (c >= 'a' && c <= 'z')
         n = c - 'a' + 1 ;
-    if (c >= 'A' && c <= "Z")
-        n = c - 'A' + 1;    
+    if (c >= 'A' && c <= 'Z')
+        n = c - 'A' + 1;  
+    while (n > 0)
+    {
+        ft_putchar(c);
+        n--;
+    }
 }
-int     main (char ac , char **av)
+int     main (int ac , char **av)
 {
     if (ac == 2)
     {
         int i;
 
+
         i = 0;
-        while ()
+        while (av[1][i])
         {
             ft_repeat(av[1][i]);
-            ft_putchar(av[1][i]);
            i++;
         }
     }
